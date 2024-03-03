@@ -16,7 +16,8 @@
     <!-- Navigation Bar -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold flex items-center"><i class="fa-solid fa-house"></i><span class="ml-2">RealEstate</span></a>
+            <a href="#" class="text-xl font-bold flex items-center"><i class="fa-solid fa-house"></i><span
+                    class="ml-2">RealEstate</span></a>
             <div class="block lg:hidden">
                 <button id="menu-toggle"
                     class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white transition duration-300">
@@ -136,12 +137,11 @@
                             </div>
                         </li>
                         <a href="#contact">
-                        <button
-                            class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded-lg shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
-                            <span class="mr-2">Get in touch </span> <i
-                                    class="fa-regular fa-paper-plane"></i>
-                                </button>
-                            </a>
+                            <button
+                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded-lg shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
+                                <span class="mr-2">Get in touch </span> <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </a>
                     </ul>
                     <img src="/assets/hero1.jpeg" width="550" height="310" alt="Image"
                         class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
@@ -205,12 +205,12 @@
         <section class="bg-gray-200 rounded-lg mb-14">
             <div class="w-full py-12 md:py-24 lg:py-32 max-w-screen-sm mx-auto" id="contact">
                 <div class="container grid gap-6 px-4 md:px-6">
-                    <div class="space-y-2" >
+                    <div class="space-y-2">
                         <h2 class="text-3xl font-bold">Contact us</h2>
                         <p class="text-gray-500 dark:text-gray-400">Have a question or need more information? Send us a
                             message.</p>
                     </div>
-                    <div class="space-y-4" >
+                    <div class="space-y-4">
                         <div class="grid grid-cols-2 gap-4">
                             <div class="space-y-2">
                                 <label
@@ -281,10 +281,10 @@
             <!-- Your form content goes here -->
             <div class="flex items-center justify-between mb-2">
                 <h2 class="text-3xl font-bold">Contact us</h2>
-            <!-- Include a button to close the modal -->
-            <button id="closeModal" class="close-button">&times;</button>
+                <!-- Include a button to close the modal -->
+                <button id="closeModal" class="close-button">&times;</button>
             </div>
-            
+
             <!-- Form content -->
             <form>
                 <div class="space-y-4">
@@ -327,6 +327,31 @@
             </form>
         </div>
     </div>
+
+    <!-- Go to Top button -->
+    <!-- <button id="goToTopBtn" class="fixed bottom-10 right-10 bg-gray-900 text-white p-3 rounded-full shadow-md hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button> -->
+    <div id="goToTopBtn" class="fixed bottom-4 right-4">
+        <div>
+          <button class="bg-gray-900 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 rounded-full flex h-12 w-12 items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path d="m18 15-6-6-6 6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-4 text-center">
         <p>&copy; 2024 RealEstate. All rights reserved.</p>
