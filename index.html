@@ -98,8 +98,8 @@
                     </div>
                 </div>
                 <div
-                    class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 sm:flex-wrap-reverse">
-                    <ul class="grid gap-6 text-center lg:text-left md:text-left">
+                    class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12 sm:grid-cols-1 sm:flex-wrap-reverse">
+                    <ul class="grid gap-6 text-center lg:text-left md:text-left order-2">
                         <li>
                             <div class="grid gap-1">
                                 <h3 class="text-xl font-bold">Exciting New Features</h3>
@@ -144,8 +144,9 @@
                         </a>
                     </ul>
                     <img src="/assets/hero1.jpeg" width="550" height="310" alt="Image"
-                        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
+                        class="order-1 mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
                 </div>
+
             </div>
         </section>
 
@@ -334,24 +335,15 @@
     </button> -->
     <div id="goToTopBtn" class="fixed bottom-4 right-4">
         <div>
-          <button class="bg-gray-900 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 rounded-full flex h-12 w-12 items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6"
-            >
-              <path d="m18 15-6-6-6 6"></path>
-            </svg>
-          </button>
+            <button
+                class="bg-gray-900 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-4 py-2 rounded-full flex h-12 w-12 items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                    <path d="m18 15-6-6-6 6"></path>
+                </svg>
+            </button>
         </div>
-      </div>
+    </div>
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-4 text-center">
         <p>&copy; 2024 RealEstate. All rights reserved.</p>
