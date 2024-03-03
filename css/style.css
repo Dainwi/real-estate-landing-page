@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: none;
 }
 
 /* Custom scrollbar track */
@@ -28,12 +29,7 @@
     background-color: #f0f0f0;
 }
 
-a:focus,
-a:hover {
-    outline: none; /* Remove focus outline */
-    text-decoration: none; /* Ensure no underline on hover */
-    color: inherit; /* Use the default text color on hover */
-}
+
 
 .modal {
     display: none;
