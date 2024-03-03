@@ -1,6 +1,6 @@
 *{
     scroll-behavior: smooth;
-    -webkit-tap-highlight-color: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Custom scrollbar track */
