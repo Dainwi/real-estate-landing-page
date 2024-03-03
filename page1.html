@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">RealEstate</a>
+            <div class="block lg:hidden">
+                <button id="menu-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white transition duration-300">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <a href="#" class="mx-2 transition duration-300 hover:text-gray-300">Home</a>
+                <a href="#" class="mx-2 transition duration-300 hover:text-gray-300">Properties</a>
+                <a href="#" class="mx-2 transition duration-300 hover:text-gray-300">About</a>
+                <a href="#" class="mx-2 transition duration-300 hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-gray-900 text-white px-4 pt-2 pb-8 lg:hidden" style="display: none;">
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Home</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Properties</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">About</a>
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-800 transition duration-300">Contact</a>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+    </script>
+    <div class="container max-w-screen-xl mx-auto">
+        <!-- Hero Section -->
+        <section class="w-full py-12">
+            <div class="container px-4 md:px-6">
+                <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+                    <img src="/assets/hero4.jpg" width="550" height="310" alt="Hero"
+                        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
+                    <div class="flex flex-col justify-center space-y-4">
+                        <div class="space-y-2">
+                            <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                                Real Estate Redefined: Find Your Dream Home
+                            </h1>
+                            <p class="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                                Discover the perfect home for you and your family. Explore our listings and make your
+                                dre
+                            </p>
+                        </div>
+                        <div class="w-full max-w-sm space-y-2">
+                            <form class="flex space-x-2">
+                                <input
+                                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+                                    placeholder="Enter your email" type="email" />
+                                <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded-lg shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container px-4 md:px-6">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                            Seamless Experience
+                        </div>
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Your Dream Home Awaits</h2>
+                        <p
+                            class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                            Discover the perfect blend of comfort and style. Our platform provides a seamless
+                            experience, allowing you
+                            to focus on what matters - finding the ideal home for you and your family.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+                    <ul class="grid gap-6">
+                        <li>
+                            <div class="grid gap-1">
+                                <h3 class="text-xl font-bold">Exciting New Features</h3>
+                                <p class="text-gray-500 dark:text-gray-400">
+                                    Explore our latest innovations designed to elevate your experience and redefine your
+                                    journey.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid gap-1">
+                                <h3 class="text-xl font-bold">Cutting-Edge Technology</h3>
+                                <p class="text-gray-500 dark:text-gray-400">
+                                    Dive into the future with our state-of-the-art technology solutions that
+                                    revolutionize property search.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid gap-1">
+                                <h3 class="text-xl font-bold">Expert Guidance</h3>
+                                <p class="text-gray-500 dark:text-gray-400">
+                                    Benefit from the knowledge of experienced real estate agents who are dedicated to
+                                    helping you every
+                                    step of the way.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid gap-1">
+                                <h3 class="text-xl font-bold">Seamless Transactions</h3>
+                                <p class="text-gray-500 dark:text-gray-400">
+                                    Enjoy a hassle-free experience with secure online payments and efficient transaction
+                                    management.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <img src="/assets/hero1.jpeg" width="550" height="310" alt="Image"
+                        class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full" />
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonial -->
+        <section class="flex flex-col md:flex-row justify-between gap-6 md:gap-8">
+            <!-- <h3>Testimonial</h3> -->
+            <div class="flex items-start p-4 border rounded-lg shadow-md sm:w-full">
+                <img src="/assets/images/asset 11.jpeg" width="80" height="80" class="rounded-full" alt="Avatar"
+                    style="aspect-ratio: 1; object-fit: cover;" />
+                <div class="ml-4">
+                    <div class="font-semibold text-lg">Jane Cooper</div>
+                    <div class="text-sm text-gray-600">CEO, Example Inc</div>
+                    <blockquote class="mt-2 text-sm text-gray-700 border-l-4 pl-4 border-blue-500">
+                        The customer service I received was exceptional. The support team went above and beyond to
+                        address my
+                        concerns.
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="flex items-start p-4 border rounded-lg shadow-md sm:w-full">
+                <img src="/assets/images/asset 11.jpeg" width="80" height="80" class="rounded-full" alt="Avatar"
+                    style="aspect-ratio: 1; object-fit: cover;" />
+                <div class="ml-4">
+                    <div class="font-semibold text-lg">Jane Cooper</div>
+                    <div class="text-sm text-gray-600">CEO, Example Inc</div>
+                    <blockquote class="mt-2 text-sm text-gray-700 border-l-4 pl-4 border-blue-500">
+                        The customer service I received was exceptional. The support team went above and beyond to
+                        address my
+                        concerns.
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="flex items-start p-4 border rounded-lg shadow-md sm:w-full">
+                <img src="/assets/images/asset 11.jpeg" width="80" height="80" class="rounded-full" alt="Avatar"
+                    style="aspect-ratio: 1; object-fit: cover;" />
+                <div class="ml-4">
+                    <div class="font-semibold text-lg">Jane Cooper</div>
+                    <div class="text-sm text-gray-600">CEO, Example Inc</div>
+                    <blockquote class="mt-2 text-sm text-gray-700 border-l-4 pl-4 border-blue-500">
+                        The customer service I received was exceptional. The support team went above and beyond to
+                        address my
+                        concerns.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section class="w-full py-12 md:py-24 lg:py-32 max-w-screen-sm mx-auto">
+            <div class="container grid gap-6 px-4 md:px-6">
+                <div class="space-y-2">
+                    <h2 class="text-3xl font-bold">Contact us</h2>
+                    <p class="text-gray-500 dark:text-gray-400">Have a question or need more information? Send us a
+                        message.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label
+                                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                                for="first-name">
+                                First name
+                            </label>
+                            <input
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                id="first-name" placeholder="Enter your first name" />
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                                for="last-name">
+                                Last name
+                            </label>
+                            <input
+                                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                                id="last-name" placeholder="Enter your last name" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="email">
+                            Email
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="email" placeholder="Enter your email" type="email" />
+                    </div>
+                    <div class="space-y-2">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="phone">
+                            Phone number
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="phone" placeholder="Enter your phone number" type="tel" />
+                    </div>
+                    <div class="space-y-2">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="message">
+                            Message
+                        </label>
+                        <textarea
+                            class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]"
+                            id="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground text-white h-10 px-4 py-2 rounded-lg shadow-sm bg-gray-900 hover:bg-gray-800 focus:ring-gray-900">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2024 RealEstate. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
